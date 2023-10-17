@@ -97,7 +97,6 @@ main{
 
 
 .about{
-     margin-top:0.8rem;
      width: 100%;   
 }
 
@@ -526,6 +525,7 @@ h1{
 
 @media (max-width:324px) {
     .about{
-        text-align: center;
+        width: 100%;
+        font-size: 0.9em;
     }
 }
