@@ -522,3 +522,10 @@ h1{
     width: 85%;
 }
 }
+
+
+@media (max-width:324px) {
+    .about{
+        text-align: center;
+    }
+}
