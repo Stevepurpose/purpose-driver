@@ -97,7 +97,8 @@ main{
 
 
 .about{
-     width: 100%;   
+     width: 100%; 
+     margin:0.5rem auto auto auto;  
 }
 
 
@@ -327,6 +328,15 @@ i{
 }
 
 
+@media (min-width:1054px) {
+
+.about{
+    text-align: center;
+}
+
+}
+
+
 
 @media (max-width:1021px) {
     h1{
@@ -487,18 +497,22 @@ h1{
         font-size:1rem ;
     }
 }
-@media (max-width:56px) {
+@media (max-width:542px) {
 
     .tools{
         font-size:0.6rem; 
       }
   
-      .breakdown{
+    .breakdown{
           font-size:0.6rem; 
       }
-
-
+    .about{
+        font-size:0.9em ;
+    } 
 }
+
+
+
 
 
 
