@@ -486,7 +486,7 @@ h1{
     }
 
     .tools{
-      font-size:0.8rem; 
+      font-size:0.9rem; 
     }
 
     .breakdown{
@@ -500,11 +500,11 @@ h1{
 @media (max-width:542px) {
 
     .tools{
-        font-size:0.6rem; 
+        font-size:0.8rem; 
       }
   
     .breakdown{
-          font-size:0.6rem; 
+          font-size:0.75rem; 
       }
     .about{
         font-size:0.9em ;
@@ -533,6 +533,7 @@ h1{
     }
 .tools{
     width: 85%;
+    font-size: 0.8rem;
 }
 }
 
