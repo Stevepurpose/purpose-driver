@@ -57,6 +57,10 @@ a:hover{
     display: none;
 }
 
+.hamburger.active{
+    color: #000000;
+}
+
 .nav-menu{
     width: 100%;
     display: flex;
