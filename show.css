@@ -2,9 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
-
 
 body{
    height: auto;
@@ -22,7 +20,6 @@ body{
        border: 1px solid lawngreen;
        margin-left: auto;
        margin-right: auto;
-       
 }
 
 header{
@@ -35,13 +32,11 @@ header{
     border: 1px solid white;
 }
 
-
 nav{
     margin-left: auto;
     width: 25%;
     display: flex;
     justify-content: space-evenly;
-    
 }
 
 a{
@@ -59,7 +54,7 @@ a:hover{
 
 .hamburger.active{
     color:black;
-    
+    margin-right: 0.5rem;
 }
 
 .nav-menu{
@@ -73,7 +68,7 @@ a:hover{
     width: 1.5rem;
     height: 0.2rem;
     margin: 0.3rem auto;
-    -webkit-transition: all 0.3sease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: white;
     color: #000000;
@@ -90,7 +85,6 @@ main{
     flex-direction: column;
     height:auto;
     width: 100%;
-    
 }
 
 .siamese_one{
@@ -101,26 +95,22 @@ main{
    align-items: center;   
 }
 
-
 .about{
      width: 80%; 
     /* margin:0.5rem auto auto auto; */
     text-align: start; 
 }
 
-
 #prof_pic{
     height: 50%;
     border-radius: 50%;
     width:40%;
     justify-self: center;
-    
 }
 
 #one{
     text-align: center;
     color: lawngreen;
-    
 }
 
 .siamese_two{
@@ -130,14 +120,12 @@ main{
    flex-direction: column;
    align-content: center;
    margin:2.5rem, auto,auto, auto;
-   
 }
 
 .skills{
     height: 90%;
     width: 100%;
     text-align: center;
-    
 }
 
 #two{
@@ -149,13 +137,10 @@ main{
     color: lawngreen;
 }
 
-
 .skill{
     list-style: none;
     margin-top: 0.5rem;
-
 }
-
 
 .siamese_three{
     height:auto ;
@@ -170,7 +155,6 @@ main{
     gap: 0.6rem;
     justify-content: center;
     margin: auto;
-    
 }
 
 .stack{
@@ -202,9 +186,7 @@ main{
     height: 15%;
     margin: auto;
     color: lawngreen;
-    
 }
-
 
 .projects{
     display: grid;
@@ -213,10 +195,7 @@ main{
     gap: 0.3rem;
     justify-content:space-around;
     margin-top: 1rem;
-    
-    
 }
-
 
 .deployed{
     border: 1px solid white;
@@ -256,7 +235,6 @@ img{
     text-align: center;
     padding: 1rem;
     color: lawngreen;
-   
 }
 
 .controls{
@@ -276,7 +254,6 @@ button:hover{
     background-color: black;
 }
 
-
 footer{
     height: 20%;
     width: 100%;
@@ -285,8 +262,8 @@ footer{
     flex-direction: column;
     align-content: center;
     justify-content: space-around;
-    
 }
+
 .footer_head{
      width: 100%;
      text-align: center;
@@ -302,6 +279,7 @@ footer{
 i{
     font-size: 2rem;
 }
+
 .footer_head{
     color: lawngreen;
 }
@@ -317,178 +295,118 @@ i{
      padding: 1.5rem;
 }
 
-
 @media (max-width:1115px) {
-
     h1{
-        
         width:40%;
         margin-right: auto;
-        
-        
     }
-
     header{
         border: 1px solid white;
     }
-
-
 }
-
 
 @media (min-width:1054px) {
-
-.about{
-    text-align: start;
+    .about{
+        text-align: start;
+    }
 }
-
-}
-
-
 
 @media (max-width:1021px) {
     h1{
-        
         width:45%;
         margin-right: auto;
-        
-        
     }
-
 }
-
 
 @media (max-width:910px) {
     h1{
-        
         width:50%;
         margin-right: auto;
-        
-        
     }
-
 }
-
 
 @media (max-width:821px) {
     h1{
-        
         width:55%;
         margin-right: auto;
-        
-        
     }
-
 }
 
-
-@media (max-width:748px) {
-    h1{
-        
-        width:60%;
-        margin-right: auto;   
-    }
-
-    .nav-menu{
-        position: fixed;
-        top: 5rem;
-        left: -100%;
-        width: 100%;
-        display: flex;
+@media (max-width: 748px) {
+    .hamburger {
+        display: flex; /* Show the hamburger icon */
         flex-direction: column;
-        text-align: center;
-        transition: 0.3s;
-        border-radius: 0.5rem;
-        background-color:#fff;
-        box-shadow: 0 0.5rem 1.75rem rgba(0,0,0,0.05);
+        cursor: pointer; /* Change cursor to pointer */
     }
 
-    .hamburger{
-        display: block;
-        cursor: pointer;
-    
+    .bar {
+        background-color: white; /* Color for the bars */
+        transition: all 0.3s ease-in-out; /* Smooth transition */
     }
-  .nav-menu.active{
-    left: 0;
-    
-  }
-  .nav_links:hover{
-    color:lawngreen;
-}
 
-.hamburger.active .bar:nth-child(2){
-    opacity: 0;
-}
+    .close-bar{
+        font-size: smaller; /* Adjust close bar size */
+        color: white;
+        margin-top: 1rem;
+    }
 
-.hamburger.active .bar:nth-child(1){
-    transform: translateY(0.5rem) rotate(45deg);
-}
+    .nav-menu {
+        display: none; /* Hide the menu by default */
+        flex-direction: column; /* Stack items vertically */
+        width: 80%; /* Full width */
+        background-color: black; /* Background color for the menu */
+    }
 
-.hamburger.active .bar:nth-child(){
-    transform: translateY(-0.5rem) rotate(-45deg);
-}
+    .nav-menu.active {
+        display: flex; /* Show menu when active */
+    }
 
-  .nav_links{
-    margin-top: 1rem;
-    color: #000000;
-    background-color: #ffffff;
-    font-weight: bold;
-  }
-}
+    .hamburger.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px); /* Rotate first bar */
+    }
 
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0; /* Hide second bar */
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px); /* Rotate third bar */
+    }
+}
 
 @media (max-width:688px) {
-.breakdown{
-    font-size:1rem;
+    .breakdown{
+        font-size:1rem;
+    }
+    .tools{
+        font-size:1rem;
+    }
+    h1{
+        width:65%;
+        margin-right: auto;   
+    }
 }
-
-.tools{
-    font-size:1rem;
-}
-h1{
-        
-    width:65%;
-    margin-right: auto;   
-}
-
-}
-
-
 
 @media (max-width:636px) {
     h1{
-        
         width:70%;
         margin-right: auto;   
     }
 
-
     .breakdown{
         font-size: 0.9rem;
     }
-
 }
 
-
 @media (max-width:592px) {
-
     h1{
-        
         width:75%;
         margin-right: auto;   
     }
-
-
 }
 
-
-
-
-
 @media (max-width:570px) {
-
     h1{
-        
         width:80%;
         margin-right: auto;   
     }
@@ -505,27 +423,21 @@ h1{
         font-size:1rem ;
     }
 }
-@media (max-width:542px) {
 
+@media (max-width:542px) {
     .tools{
         font-size:0.8rem; 
-      }
-  
+    }
+
     .breakdown{
-          font-size:0.75rem; 
-      }
+        font-size:0.75rem; 
+    }
     .about{
         font-size:0.9em ;
     } 
 }
 
-
-
-
-
-
 @media (max-width:460px) {
-
     .projects{
         display:flex;
         flex-direction: column;
@@ -539,17 +451,15 @@ h1{
         width: 60%;
         margin: auto;
     }
-.tools{
-    width: 85%;
-    font-size: 0.8rem;
+    .tools{
+        width: 85%;
+        font-size: 0.8rem;
+    }
 }
-}
-
 
 @media (max-width:324px) {
     .about{
         width: 100%;
         font-size: 0.9em;
-        
     }
 }
