@@ -16,12 +16,13 @@
                 <a href="#four" class="nav_links">Projects</a>
                 <a href="#footer" class="nav_links">Contact</a>
                 <a href="https://hashnode.com/@Stevepurpose" class="nav_links">Blogs</a>
+                <span class="close-bar" style="display: none;">&times;</span>
             </div>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-                <span class="close-bar" style="display: none;">&times;</span> <!-- Close icon -->
+             <!--    <span class="close-bar" style="display: none;">&times;</span> Close icon -->
             </div>
         </nav>
         
@@ -33,7 +34,7 @@
         <p class="about">Stephen is a  fullstack software developer.</p>
          <p class="about">Values are what I'm about. Steadily improving every day, making projects and also publishing technical articles. Also done some open source Contribution. 
 
-            My experiences range from working with frontend, backend and computer networking technologies, a strong knowledge of Linux and even some very good low-level systems understanding like writing network sockets in C. </p>
+            My experiences range from working with backend and computer networking technologies to frontend technologie. I have a decent knowledge of Linux and even some low-level systems understanding like writing network sockets in C. </p>
         
      </div>
      
@@ -264,20 +265,30 @@
     <script>
 let hamburger = document.querySelector(".hamburger");
 let navMenu = document.querySelector(".nav-menu");
+let closebar =document.querySelector(".close-bar")
 
 // Show menu
 hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
+    closebar.style.display="block"
+    hamburger.style.display="none"
+
 });
+
+
+//close menu
+closebar.addEventListener("click", ()=>{
+    navMenu.classList.remove("active")
+    hamburger.style.display="block"
+})
 
 // Close menu when a link is clicked
 let navLink = document.querySelectorAll(".nav_links");
 navLink.forEach(link => link.addEventListener("click", closeMenu));
 
 function closeMenu() {
-    hamburger.classList.remove("active");
     navMenu.classList.remove("active");
+    hamburger.style.display="block"
 }
 
     </script>

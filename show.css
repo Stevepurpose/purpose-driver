@@ -29,7 +29,7 @@ header{
     margin-top:0;
     height: 15%;
     width: 100%;
-    border: 1px solid white;
+    border: 1px solid lightgreen;
 }
 
 nav{
@@ -295,6 +295,11 @@ i{
      padding: 1.5rem;
 }
 
+
+.close-bar{
+    display: none;
+}
+
 @media (max-width:1115px) {
     h1{
         width:40%;
@@ -337,6 +342,7 @@ i{
         display: flex; /* Show the hamburger icon */
         flex-direction: column;
         cursor: pointer; /* Change cursor to pointer */
+        
     }
 
     .bar {
@@ -345,20 +351,39 @@ i{
     }
 
     .close-bar{
-        font-size: smaller; /* Adjust close bar size */
-        color: white;
-        margin-top: 1rem;
+        color:white;
+        font-size: 2.5rem;
+        cursor:pointer ;
     }
+
+    header{
+        display: grid;
+        grid-template-rows: 20% 80%;
+    
+    }
+
+   
+
 
     .nav-menu {
         display: none; /* Hide the menu by default */
         flex-direction: column; /* Stack items vertically */
         width: 80%; /* Full width */
         background-color: black; /* Background color for the menu */
+        
     }
 
     .nav-menu.active {
         display: flex; /* Show menu when active */
+        flex-direction:column;
+        justify-content: space-between;
+        background-color:black; 
+    
+    }
+
+
+    .nav_links{
+        color:white;
     }
 
     .hamburger.active .bar:nth-child(1) {
