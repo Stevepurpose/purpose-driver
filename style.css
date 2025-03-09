@@ -53,5 +53,7 @@ button{
     color:white;
     background-color: purple;
     padding: 1.5rem;
+    width:50%;
+    box-shadow: darkslategray;
 }
 
